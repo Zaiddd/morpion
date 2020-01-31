@@ -78,7 +78,16 @@ public class Morpion {
 		humain = new Joueur("X", Color.BLUE);
 		ordinateur = new Joueur("O", Color.RED);
 
+		/*
+		 * on initialise le nombre de cases jouees
+		 */
+
 		nombreCasesJouees = 0;
+
+		/*
+		 * on cree la presentation
+		 */
+
 		presentation = new PresentationMorpion(this);
 
 		if (ordinateurCommence) {
@@ -88,7 +97,7 @@ public class Morpion {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param x
 	 *            abscisse de la case de la gauche vers la droite (0, 1 ou 2)
 	 * @param y
@@ -103,7 +112,7 @@ public class Morpion {
 	 * Cette methode permet de valider le coup d'un humain, elle declenche
 	 * automatiquement la replique de l'ordinateur si la partie n'est pas
 	 * terminee par le coup de l'humain.
-	 * 
+	 *
 	 * @param caseJouee
 	 *            case jouee par le joueur humain
 	 */
@@ -135,7 +144,7 @@ public class Morpion {
 	}
 
 	/**
-	 * 
+	 *
 	 * @return true si la partie est finie, false sinon
 	 */
 	private boolean partieFinie() {
@@ -163,7 +172,7 @@ public class Morpion {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param joueur
 	 *            joueur dont on cherche a evaluer la position
 	 * @return l'evaluation de la position actuelle pour le joueur (1 si la
@@ -189,7 +198,7 @@ public class Morpion {
 	}
 
 	/**
-	 * 
+	 *
 	 * @param joueur
 	 *            le joueur venant de jouer
 	 * @return le joueur adverse
@@ -209,7 +218,7 @@ public class Morpion {
 	}
 
 	/**
-	 * 
+	 *
 	 * @return la meilleure case a jouer pour l'ordinateur
 	 */
 	private Case getMeilleureCase() {
