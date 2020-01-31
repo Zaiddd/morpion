@@ -4,17 +4,8 @@ import javax.swing.JFrame;
 
 import Modele.Morpion;
 
-/**
- * 
- * @author guehenneux
- * 
- */
 public class ApplicationMorpion {
 
-	/**
-	 * 
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		Morpion morpion = new Morpion(false);
 		JFrame fenetre = new JFrame("Morpion");
