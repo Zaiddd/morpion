@@ -78,16 +78,7 @@ public class Morpion {
 		humain = new Joueur("X", Color.BLUE);
 		ordinateur = new Joueur("O", Color.RED);
 
-		/*
-		 * on initialise le nombre de cases jouees
-		 */
-
 		nombreCasesJouees = 0;
-
-		/*
-		 * on cree la presentation
-		 */
-
 		presentation = new PresentationMorpion(this);
 
 		if (ordinateurCommence) {
