@@ -7,7 +7,7 @@ import Modele.Morpion;
 public class ApplicationMorpion {
 
 	public static void main(String[] args) {
-		Morpion morpion = new Morpion(false);
+		Morpion morpion = new Morpion(true);
 		JFrame fenetre = new JFrame("Morpion");
 
 		fenetre.setSize(180, 200);
@@ -16,5 +16,4 @@ public class ApplicationMorpion {
 		fenetre.setContentPane(morpion.presentation);
 		fenetre.setVisible(true);
 	}
-
 }
